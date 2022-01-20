@@ -1,0 +1,141 @@
+header{
+  height: 50px;
+    width: 100%;
+    margin-bottom: 5%;
+    margin-top: 0;
+  background: lightgreen;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navMenu {
+  position: absolute;
+    top: 35px;
+  right: 1px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.navMenu a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  width: 80px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+  color: green;
+}
+
+.navMenu .dot {
+  width: 6px;
+  height: 6px;
+  background: green;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translateX(240px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:nth-child(1):hover ~ .dot {
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover ~ .dot {
+  transform: translateX(110px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover ~ .dot {
+  transform: translateX(195px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover ~ .dot {
+  transform: translateX(285px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(5):hover ~ .dot {
+    transform: translateX(430px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 2fr 2fr 2fr;
+    background: white;
+    margin-left: 15%;
+    margin-right: 15%;
+    min-width: 500px;
+}
+.grid-item {
+    padding-left: 3%;
+    padding-top: 3%;
+}
+
+.item1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    min-width: 500px;
+    text-align: left;
+    font-family: 'Courier New';
+    font-size: 60px;
+    padding: 1%;
+}
+
+.item2 {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    font-size:20px
+}
+
+.item3 {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    min-width: 200px;
+    font-size:20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
+.mis{
+    font-style: italic;
+    margin: 1% 5%;
+    padding: 2%;
+    border: double wheat;
+    box-shadow: 20px 20px rgba(0,0,0,.15);
+    transition: all .4s ease;
+}
+.mis:hover{
+    border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+    box-shadow: 10px 10px rgba(0,0,0,.25);
+}
+
