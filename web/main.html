@@ -3,15 +3,57 @@
 <html>
 <head>
 	 <meta charset="UTF-8">
-      
-       
-       
-        
 <title>AINALAB</title>
 <link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
 <link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
 
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
 
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
 </head>
 <body>
 	<section id="screen1">
@@ -21,47 +63,178 @@
 
 </section>
 
-<section id="screen2">
-	<h1>About Us</h1>
-	<div class="row1">
-		<div class="column1">
-			<p>The environmental online school project - Ainalab was created with the support of the British Council and Chevron in the city of Atyrau, under the initiative of eco-activist Togzhan Uazikhanova. The main goal of the project is to create an accessible course for a healthy and environmentally friendly lifestyle, consisting of educational videos with practical examples and reinforcing tasks, and accessible to both schoolchildren and a wide audience interested in this topic.</p>
-			
-			<button onclick="window.location.href = 'about.html';" class="custom-btn btn-4"><span>Read More</span></button>
-			
+<section id="screen2" style="padding: 2%;">
+	<div class="container">
+		<div class="row">
+			<div class="col justify-content-md-center text-center">
+				<h1>About Us</h1>
+			</div>
 		</div>
-		<div class="column1">
-	<img src="ainalab1.jpg" style="height: 650px;width: 650px;">
+		<div class="row">
+			<div class="col-8 justify-content-md-center p-4">
+				<p style="font-size: 1.8vw;">The environmental online school project - Ainalab was created with the support of the
+					British Council and Chevron in the city of Atyrau, under the initiative of eco-activist
+					Togzhan Uazikhanova. The main goal of the project is to create an accessible course for a
+					healthy and environmentally friendly lifestyle, consisting of educational videos with
+					practical examples and reinforcing tasks, and accessible to both schoolchildren and
+					a wide audience interested in this topic.
+				</p>
+
+				<button type="button" class="btn btn-outline-primary btn-lg" onclick="window.location.href = 'about.html';" class="custom-btn btn-4"><span>Read More</span></button>
+				<button onclick="callZvuk()" class="btn btn-outline-primary btn-lg">
+    <span>Click to listen music</span>
+  </button>
+  <audio id="mus" src="veter.mp3"></audio>
+			</div>
+			<div class="col-4">
+				<img src="ainalab1.jpg" class="img-fluid img-rounded" style="max-height: 400px;">
+			</div>
 		</div>
 	</div>
+
+
 	
 </section>
 
+	<section style="background-color: #F0FFF0; padding: 3%; justify-content: center" id="screen3">
+		<div class="container text-center"><h1>Our Video classes</h1></div>
+		<div class="card-deck">
+			<div class="card " style="background-color: #F0FFF0;">
+				<iframe width=100% height=auto src="https://www.youtube.com/embed/4GKuv-ik1DM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class="card-body">
+					<h5 class="card-title">Food waste</h5>
+					<p class="card-text">About food waste, the reasons for the disposal of organic matter, their harm and methods of <disposal class=""></disposal></p>
+				</div>
+			</div>
+			<div class="card" style="background-color: #F0FFF0;">
+				<iframe width=100% height=auto src="https://www.youtube.com/embed/6O6TEABQ674" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class="card-body ">
+					<h5 class="card-title">Eco decluttering</h5>
+					<p class="card-text">Second-hand is gaining more and more popularity not only for its attractive prices, but also for the idea of   conscious consumption</p>
+				</div>
+			</div>
+			<div class="card" style="background-color: #F0FFF0;">
+				<iframe width=100% height=auto src="https://www.youtube.com/embed/p5p-dYs_u7Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class="card-body ">
+					<h5 class="card-title">Eco house</h5>
+					<p class="card-text">Each person is responsible for everything that he leaves behind. Proper disposal and sorting of waste can solve many environmental and financial problems.</p>
+				</div>
+			</div>
+			<div class="card" style="background-color: #F0FFF0;">
+				<iframe width=100% height=auto src="https://www.youtube.com/embed/qftvqd0CX6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class="card-body ">
+					<h5 class="card-title">greenwashing</h5>
+					<p class="card-text">GreenWashing is a special form of eco-marketing, when a manufacturer intentionally misleads consumers about the properties of its products.</p>
+				</div>
+			</div>
+		</div>
+		<div class="card-deck mt-5">
+			<div class="card" style="background-color: #F0FFF0;">
+				<iframe width=100% height=auto src="https://www.youtube.com/embed/YIDi_KImYT8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class="card-body ">
+					<h5 class="card-title">Separate collection of paper</h5>
+					<p class="card-text">What do you think is the best way to use old paper? But what for to hand over a paper on waste paper? What is made from recycled paper?</p>
+				</div>
+			</div>
+			<div class="card" style="background-color: #F0FFF0;">
+				<iframe width=100% height=auto src="https://www.youtube.com/embed/DEh5qr8PYu0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class="card-body ">
+					<h5 class="card-title">Separate collection of plastic</h5>
+					<p class="card-text">There are seven types of plastic and I'm sure you've all noticed these markings on plastic packaging. But do you know what these signs mean and how they differ from each other?</p>
+				</div>
+			</div>
+			<div class="card" style="background-color: #F0FFF0;">
+				<iframe width=100% height=auto src="https://www.youtube.com/embed/Cp5LoUNS-cE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class="card-body ">
+					<h5 class="card-title">Alternatives to non-recyclable waste</h5>
+					<p class="card-text">Anything that can be reused should be reused. And if not, then use alternative methods.</p>
+				</div>
+			</div>
+			<div class="card" style="background-color: #F0FFF0;" >
+				<iframe width=100% height=auto src="https://www.youtube.com/embed/LemaLFoxJA8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class="card-body">
+					<h5 class="card-title">Where to start your eco-consciousness?</h5>
+					<p class="card-text">Eco-friendliness and simple steps on the way to it. In this video, we will talk about conscious consumption, waste reduction and living in harmony with nature.</p>
+				</div>
+			</div>
+		</div>
 
+
+	</section>
+
+<section style="padding: 2%;">
+	<div class="container">
+		<div class="row">
+			<div class="col justify-content-md-center text-center">
+				<h1>Useful Links</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-8 justify-content-md-center p-4">
+				<p style="font-size: 1.8vw;">Ecology is a topic that is discussed all over the world. Around the world, activists are starting their own projects to solve global problems just like us. In particular, we can say that we were inspired by their achievements and began our journey in this area. There are a number of useful sites for those who are interested in the topic of our site, which will be very useful.</p>
+				<button type="button" class="btn btn-outline-info btn-lg" onclick="window.location.href = 'links.html';" class="custom-btn btn-4"><span>Read More</span></button>
+			</div>
+			<div class="col-4">
+				<img src="https://www.cablesson.co.uk/wp-content/uploads/2015/07/worldwide.png" class="img-fluid img-rounded" style="max-height: 400px;">
+			</div>
+		</div>
+	</div>
+</section>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+	<footer class="bg-dark text-center text-white">
+		<!-- Grid container -->
+		<div class="container p-3 pb-0">
+			<!-- Section: Social media -->
+			<section class="mb-4">
+				<span class="btn btn-outline-light btn-floating m-1" onclick="openNav()">&#9776; Menu</span>
+				<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">Facebook</a>
+				<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">Twitter</a>
+				<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">Google</a>
+				<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">Instagram</a>
+				<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">Linkedin</a>
+				<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">WhatsApp</a>
+			</section>
+			<!-- Section: Social media -->
+		</div>
+		<!-- Grid container -->
+
+		<!-- Copyright -->
+		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+			© 2020 Ainalab
+		</div>
+		<!-- Copyright -->
+	</footer>
+<!--
 <section id="screen3">
 	<h1>Our Video classes</h1>
 	<div class="row">
 		<div class="column">
 	<iframe width="350" height="200" src="https://www.youtube.com/embed/4GKuv-ik1DM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	
+	1
 	<h5>Food waste</h5>
 	<p>
 	About food waste, the reasons for the disposal of organic matter, their harm and methods of disposal.</p>
 		</div>
 		<div class="column">
-			<iframe width="350" height="200" src="https://www.youtube.com/embed/6O6TEABQ674" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			2<iframe width="350" height="200" src="https://www.youtube.com/embed/6O6TEABQ674" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			<h5>Eco decluttering</h5>
 			<p>
 			Second-hand is gaining more and more popularity not only for its attractive prices, but also for the idea of   conscious consumption</p>
 		</div>
 	<div class="column">
-			<iframe width="350" height="200" src="https://www.youtube.com/embed/p5p-dYs_u7Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			3<iframe width="350" height="200" src="https://www.youtube.com/embed/p5p-dYs_u7Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			<h5>Eco house</h5><p>
 			Each person is responsible for everything that he leaves behind. Proper disposal and sorting of waste can solve many environmental and financial problems.</p>
 		</div>
 	
      <div class="column">
-	<iframe width="350" height="200" src="https://www.youtube.com/embed/qftvqd0CX6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	4<iframe width="350" height="200" src="https://www.youtube.com/embed/qftvqd0CX6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	<h5>greenwashing</h5>
 	<p>GreenWashing is a special form of eco-marketing, when a manufacturer intentionally misleads consumers about the properties of its products.</p>
 		</div>	
@@ -70,19 +243,19 @@
 	<br><br><br><br><br><br><br>
 		<div class="row">
 		<div class="column">
-		<iframe width="350" height="200" src="https://www.youtube.com/embed/YIDi_KImYT8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		5<iframe width="350" height="200" src="https://www.youtube.com/embed/YIDi_KImYT8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		<h5>Separate collection of paper</h5>
 		<p>What do you think is the best way to use old paper? But what for to hand over a paper on waste paper? What is made from recycled paper?</p>
 	</div>
 	
 		<div class="column">
-			<iframe width="350" height="200" src="https://www.youtube.com/embed/DEh5qr8PYu0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			6<iframe width="350" height="200" src="https://www.youtube.com/embed/DEh5qr8PYu0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			<h5>Separate collection of plastic</h5>
 			<p>
 			There are seven types of plastic and I'm sure you've all noticed these markings on plastic packaging. But do you know what these signs mean and how they differ from each other?</p>
 		</div>
 		<div class="column">
-	<iframe width="350" height="200" src="https://www.youtube.com/embed/Cp5LoUNS-cE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	7<iframe width="350" height="200" src="https://www.youtube.com/embed/Cp5LoUNS-cE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	<h5>Alternatives to non-recyclable waste</h5>
 	<p>Anything that can be reused should be reused. And if not, then use alternative methods.</p>
 		</div>
@@ -106,28 +279,20 @@
 			
 		</div>
 		<div class="column1">
-	<img src="https://www.cablesson.co.uk/wp-content/uploads/2015/07/worldwide.png" style="height: 600;width: 400px;">
+	<img src="https://www.cablesson.co.uk/wp-content/uploads/2015/07/worldwide.png" style="width: 400px;">
 
 		</div>
 		
 	</div>
 </section>
-<footer>
-    <div class="social-links-warp">
-        <div class="container">
-            <div class="social-links">
-                <a href="" class="instagram"><span>instagram</span></a>
-                <a href="" class="pinterest"><span>pinterest</span></a>
-                <a href="" class="facebook"><span>facebook</span></a>
-                <a href="" class="twitter"><span>twitter</span></a>
-                <a href="" class="youtube"><span>youtube</span></a>
-                <a href="" class="tumblr"><span>tumblr</span></a>
-            </div>
-        </div>
-    </div>
-</footer>
-</body>
 
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+</body>
 <script> 
   $(document).ready(function(){
 	   $(window).bind('scroll', function() {
@@ -158,8 +323,19 @@
   })
 });
 
+function callZvuk() {
 
+    document.getElementById('mus').play();
 
+}
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
 
 </script>
 

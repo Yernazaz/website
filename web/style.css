@@ -5,13 +5,13 @@ Description: Create a sticky navigation bar that remains fixed to the top after 
 Author: Stan Kostadinov
 Author URI: https://stanhub.com
 Version: 1.0.0 - 11.01.2014
-*/
+
 
 * {margin: 0; padding: 0;}
 
 a {text-decoration: none;}
 
-/* This class is added on scroll */
+/* This class is added on scroll
 .fixed {
     position: fixed;
     top: 0;
@@ -29,7 +29,7 @@ body {
 section {
     height: 100vh;
 }
-
+*/
 #screen1 {
 
   display: flex;
@@ -52,7 +52,7 @@ opacity:0.84;
 #screen1 p {
     padding-top: 200px;
 }
-
+/*
 #screen2 {
     background: white;
 }
@@ -181,10 +181,10 @@ height: 59vh;
   float: left;
   width: 50%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  height: 300px; /* Should be removed. Only for demonstration
 }
 
-/* Clear floats after the columns */
+/* Clear floats after the columns
 .row1:after {
   content: "";
   display: table;
@@ -198,10 +198,10 @@ height: 59vh;
   float: left;
   width: 25%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  height: 300px; /* Should be removed. Only for demonstration
 }
 
-/* Clear floats after the columns */
+/* Clear floats after the columns
 .row:after {
   content: "";
   display: table;
@@ -213,7 +213,7 @@ height: 59vh;
   padding: 0;
   box-sizing: border-box;
 }
-
+*/
 .typing.animate {
   
   width: 21ch;
@@ -280,7 +280,7 @@ animation: type 2.5s steps(25), writer 1s infinite alternate, delete 0.5s steps(
 }
 
 
-
+/*
 .custom-btn {
   width: 150px;
   height: 45px;
@@ -371,65 +371,65 @@ background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
 .btn-4 span:hover:after {
   width: 100%;
 }
-.footer-section {
-    background: #262626;
-    padding: 10px;
+
+.footer-basic {
+  padding:40px 0;
+  background-color:#000;
+  color:lightgrey;
 }
-.social-links-warp {
-    text-align: center;
-    background: #222121;
-    padding: 46px 50px;
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
 }
-.social-links a {
-    margin-right: 88px;
-    display: inline-block;
+
+.footer-basic li {
+  padding:0 10px;
 }
-.social-links a:last-child {
-    margin-right: 0;
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
 }
-.social-links a i {
-    font-size: 30px;
-    color: #d7d7d7;
-    float: left;
-    margin-right: 19px;
-    overflow: hidden;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
+
+.footer-basic ul a:hover {
+  opacity:1;
 }
-.social-links a span {
-    display: inline-block;
-    font-size: 12px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #9f9fa0;
-    padding-top: 10px;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
 }
-.social-links a.instagram:hover i {
-    color: #2F5D84;
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
 }
-.social-links a.google-plus:hover i {
-    color: #E04B37;
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
 }
-.social-links a.twitter:hover i {
-    color: #5abed6;
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
 }
-.social-links a.pinterest:hover i {
-    color: #CD212D;
-}
-.social-links a.facebook:hover i {
-    color: #39599F;
-}
-.social-links a.twitter:hover i {
-    color: #5abed6;
-}
-.social-links a.youtube:hover i {
-    color: #D12227;
-}
-.social-links a.tumblr:hover i {
-    color: #37475E;
-}
-.social-links a:hover span {
-    color: #fff;
-}
+*/
+  
